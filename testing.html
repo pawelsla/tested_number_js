@@ -34,21 +34,30 @@ else
 // Sprawdzenie czy liczba jest całkowita
 var a = aVariable;
 var b = parseInt (aVariable);
+var result= b/a; 
 
 function showResult (result){
-	var result= b/a; 
-     if (result === 1)
+	    if (result === 1)
 		{console.log ('Integer number');}
-	else {document.write('Tested number is not integer number');}
+	else {console.log ('Tested number is not integer number');}
 }
 
+showResult();
+console.log(result);
 
+document.write("<p>");
 document.write ("Check number is bigger than -1");
-if (aVariable > -1 && showResult) {
+
+if (result===1 && aVariable > -1) {
 	document.write ('Number passed test');}
 else {document.write ('Number didn\'t pass test');
 }
+document.write("</p>");
 
+
+exit ();
+
+</script>
 </script>
 </body>
 
