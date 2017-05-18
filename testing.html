@@ -15,9 +15,9 @@ if (isNaN(aVariable)){
 }
 
 
-	if (typeof aVariable !== "undefined" && aVariable !== null)
+	if (typeof aVariable === typeof undefined && aVariable === null)
 		{console.log ('Number abscence.');} 
-if (typeof  aVariable !== "number"){ 
+if (typeof  aVariable === "number"){ 
  confirm("Introduced number is " + aVariable);
 }
 
@@ -26,7 +26,7 @@ if (typeof  aVariable !== "number"){
      {if (aVariable < 50) 
 	confirm ("Number between 0 and 50");
 else 
-(alert ("Number out of reference"));
+(alert ("Number out of reference or it's not a number"));
 }
 
 
@@ -37,7 +37,7 @@ var b = parseInt (aVariable);
 var result= b/a; 
 
 function showResult (result){
-	    if (result === 1)
+	    if (result === 1.00)
 		{console.log ('Integer number');}
 	else {console.log ('Tested number is not integer number');}
 }
@@ -48,14 +48,13 @@ console.log(result);
 document.write("<p>");
 document.write ("Check number is bigger than -1");
 
-if (result===1 && aVariable > -1) {
-	document.write ('Number passed test');}
-else {document.write ('Number didn\'t pass test');
+if (result===1 && aVariable > -1 && aVariable < 50) {
+	document.write ('Number passed test');} 
+else {document.write ('Number didn\'t pass this test');
 }
 document.write("</p>");
 
 
-exit ();
 
 </script>
 </script>
